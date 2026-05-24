@@ -1,0 +1,37 @@
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+.cache/
+.npm/
+.pnp/
+.pnp.js
+
+# --- Python ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Whisper model cache (large files) ---
+.cache/whisper/
+
+# --- App-generated dirs ---
+backend/uploads/
+backend/audio/
+
+# --- Env files (keep examples, ignore real secrets) ---
+.env
+.env.local
+.env.*.local
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

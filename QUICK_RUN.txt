@@ -1,0 +1,15 @@
+# Backend (first terminal)
+cd d:\EM_PROJECT\ai-flashcard-system\backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+# Install FFmpeg if you don't have it: winget install Gyan.FFmpeg
+python main.py
+
+
+
+
+# Frontend (second terminal)
+cd d:\EM_PROJECT\ai-flashcard-system\frontend
+npm install
+npm run dev

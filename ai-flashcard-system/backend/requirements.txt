@@ -1,0 +1,20 @@
+# openai-whisper's setup.py imports pkg_resources, which was removed in
+# setuptools >= 81. Pin setuptools < 81 so a clean `pip install -r` works,
+# and install whisper with --no-build-isolation so it sees this setuptools:
+#
+#   pip install "setuptools<81" wheel
+#   pip install --no-build-isolation openai-whisper==20240930
+#   pip install -r requirements.txt
+#
+setuptools<81
+wheel
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pandas==2.2.3
+rapidfuzz==3.10.1
+python-multipart==0.0.17
+openai-whisper==20240930
+torch==2.5.1
+torchaudio==2.5.1
+pydantic==2.10.3
+python-dotenv==1.0.1
