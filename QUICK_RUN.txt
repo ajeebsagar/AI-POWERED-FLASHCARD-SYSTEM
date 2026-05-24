@@ -2,6 +2,8 @@
 cd d:\EM_PROJECT\ai-flashcard-system\backend
 python -m venv venv
 venv\Scripts\activate
+pip install "setuptools<81" wheel
+pip install --no-build-isolation openai-whisper==20240930
 pip install -r requirements.txt
 # Install FFmpeg if you don't have it: winget install Gyan.FFmpeg
 python main.py
